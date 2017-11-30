@@ -5,18 +5,12 @@ using UnityEngine.iOS;
 
 public class AdaptiveScreenController : MonoBehaviour {
 
-	public RectTransform menu;
-	public RectTransform control;
-	public RectTransform info;
-
 	void Start () {
+		RectTransform rt = GetComponent<RectTransform> ();
+
 		if (Device.generation == DeviceGeneration.iPhoneUnknown) {
-			menu.offsetMax = new Vector2 (0, -64);
-			menu.offsetMin = new Vector2 (0, 64);
-			control.offsetMax = new Vector2 (0, -64);
-			control.offsetMin = new Vector2 (0, 64);
-			info.offsetMax = new Vector2 (0, -64);
-			info.offsetMin = new Vector2 (0, 64);
+			rt.offsetMax = new Vector2 (0, -80);
+			rt.offsetMin = new Vector2 (0, 100);
 		}
 	}
 	
