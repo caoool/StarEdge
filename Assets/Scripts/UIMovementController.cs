@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class UIMovementController : MonoBehaviour {
-	EventTrigger breakTrigger;
-	EventTrigger jumpTrigger;
-	EventTrigger leftTrigger;
-	EventTrigger rightTrigger;
+	public EventTrigger breakTrigger;
+	public EventTrigger jumpTrigger;
+	public EventTrigger leftTrigger;
+	public EventTrigger rightTrigger;
 
-	GameObject player;
-	MovementController movementController;
+	public GameObject player;
+	public MovementController movementController;
 
 	void AddEventTriggerListener(
 		EventTrigger trigger,
@@ -58,12 +58,12 @@ public class UIMovementController : MonoBehaviour {
 	}
 
 	void Start () {
-		breakTrigger = GameObject.Find("BreakButton").GetComponent<EventTrigger>();
-		leftTrigger = GameObject.Find("LeftButton").GetComponent<EventTrigger>();
-		rightTrigger = GameObject.Find("RightButton").GetComponent<EventTrigger>();
-		jumpTrigger = GameObject.Find("JumpButton").GetComponent<EventTrigger>();
-
-		movementController = GameObject.Find("Player").GetComponentInChildren<MovementController>();
+//		breakTrigger = GameObject.Find("BreakButton").GetComponent<EventTrigger>();
+//		leftTrigger = GameObject.Find("LeftButton").GetComponent<EventTrigger>();
+//		rightTrigger = GameObject.Find("RightButton").GetComponent<EventTrigger>();
+//		jumpTrigger = GameObject.Find("JumpButton").GetComponent<EventTrigger>();
+//
+//		movementController = GameObject.Find("Player").GetComponentInChildren<MovementController>();
 
 		AddEventTriggerListener(
 			breakTrigger,

@@ -36,22 +36,22 @@ public class GameManagerScript : MonoBehaviour {
 		case GameStatus.Idle:
 			uiMenu.SetActive (true);
 			uiControl.SetActive (false);
-			uiInfo.SetActive (false);
+//			uiInfo.SetActive (false);
 			break;
 		case GameStatus.Play:
 			uiMenu.SetActive (false);
 			uiControl.SetActive (true);
-			uiInfo.SetActive (true);
+//			uiInfo.SetActive (true);
 			break;
 		case GameStatus.Pause:
 			uiMenu.SetActive (true);
 			uiControl.SetActive (false);
-			uiInfo.SetActive (true);
+//			uiInfo.SetActive (true);
 			break;
 		case GameStatus.Restart:
 			uiMenu.SetActive (true);
 			uiControl.SetActive (false);
-			uiInfo.SetActive (false);
+//			uiInfo.SetActive (false);
 			title.text = "";
 			score.text = "SCORE\n" + Mathf.Abs (level.transform.position.z).ToString ("F0");
 			break;
